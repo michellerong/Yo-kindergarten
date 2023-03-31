@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".par_book_newthing">
+    <TextView
+        android:id="@+id/par_title"
+        android:layout_width="234dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:text="向日葵班 班級聯絡簿"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/pa_tea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/par_tea"
+        android:layout_width="230dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:text="陳老師"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/par_hw_bg"
+        android:layout_width="377dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#E9ECEC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/par_input1"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="輸入備註"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/par_input2"
+        app:layout_constraintEnd_toEndOf="@+id/par_hw_bg"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="@+id/par_hw_bg"
+        app:layout_constraintTop_toTopOf="@+id/par_hw_bg"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <EditText
+        android:id="@+id/par_input2"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="9dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="輸入備註"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/par_input3"
+        app:layout_constraintEnd_toEndOf="@+id/par_hw_bg"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="@+id/par_hw_bg"
+        app:layout_constraintTop_toTopOf="@+id/par_hw_bg"
+        app:layout_constraintVertical_bias="0.61" />
+
+    <EditText
+        android:id="@+id/par_input3"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="輸入備註"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/par_input4"
+        app:layout_constraintEnd_toEndOf="@+id/par_hw_bg"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="@+id/par_hw_bg"
+        app:layout_constraintTop_toTopOf="@+id/par_hw_bg"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <EditText
+        android:id="@+id/par_input4"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="輸入備註"
+        android:textSize="24dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/par_hw_bg"
+        app:layout_constraintEnd_toEndOf="@+id/par_hw_bg"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toStartOf="@+id/par_hw_bg"
+        app:layout_constraintTop_toTopOf="@+id/par_hw_bg"
+        app:layout_constraintVertical_bias="0.704" />
+
+
+    <Button
+        android:id="@+id/par_save_show"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+
+        android:background="@drawable/buttonstyle1"
+        android:text="儲存"
+        android:textAllCaps="true"
+        android:textColor="#FF9800"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".par_babycar_inform">
+
+    <Button
+        android:id="@+id/par_notify"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="#E2D8D8"
+        android:text="通知"
+        android:textAllCaps="true"
+
+        android:textColor="#FAFAF9"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/par_car_move"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="#E2D8D8"
+        android:text="行車動態"
+        android:textAllCaps="true"
+
+        android:textColor="#FAFAF9"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
+
+    <Button
+        android:id="@+id/par_car_inform"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="#948686"
+        android:text="車輛資訊"
+        android:textAllCaps="true"
+        android:textColor="#FAFAF9"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/par_bg1"
+        android:layout_width="370dp"
+        android:layout_height="480dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#5A5757"
+        app:layout_constraintBottom_toTopOf="@+id/mem_inputbg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mem_carnum"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="車牌號碼"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mem_inputcarnum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/par_bg1"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mem_inputcarnum"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
+        android:text="RU-8888"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mem_caryear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <TextView
+        android:id="@+id/mem_caryear"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:text="車齡"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mem_inputcaryear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mem_inputcaryear"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
+        android:text="3年"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mem_babycartea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884" />
+
+    <TextView
+        android:id="@+id/mem_babycartea"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:text="隨車人員"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mem_inputcartea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mem_inputcartea"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
+        android:text="曾高興"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/mem_teaphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <TextView
+        android:id="@+id/mem_teaphone"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:text="連絡電話"
+        android:textAllCaps="true"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mem_inputteaphone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/mem_inputteaphone"
+        android:layout_width="172dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="8dp"
+        android:text="0978-564-789"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/par_bg1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
+</android.support.constraint.ConstraintLayout>
